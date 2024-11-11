@@ -9,5 +9,5 @@ datasource db {
 
 model User {
   id   Int @id
-  like Int
+  like Int @default(0)
 }

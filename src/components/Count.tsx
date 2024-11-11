@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-function Count() {
+export default function Count() {
   const [count, setCount] = useState(0);
   return (
     <div className="m-2 flex flex-col items-center justify-center gap-4">
@@ -16,5 +16,3 @@ function Count() {
     </div>
   );
 }
-
-export default Count;

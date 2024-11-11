@@ -6,7 +6,7 @@ services:
     depends_on:
       - db
     ports:
-      - 3000:3000
+      - "3000:3000"
     volumes:
       - ./:/app
   db:
@@ -15,7 +15,7 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
     ports:
-      - 5432:5432
+      - "5432:5432"
     env_file:
       - .env
 

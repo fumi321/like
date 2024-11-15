@@ -1,4 +1,4 @@
-import Like from "@/components/Like";
+import Like from "@/app/components/Like";
 
 export default function Home() {
   return (

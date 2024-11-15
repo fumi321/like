@@ -1,6 +1,6 @@
 "use client";
 
-import { getLike, incrementLike } from "@/server/actions";
+import { getLike, incrementLike } from "@/actions/actions";
 import React, { useEffect, useState } from "react";
 
 export default function Like() {

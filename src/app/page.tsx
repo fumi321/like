@@ -1,9 +1,9 @@
-import Count from "@/components/Count";
+import Like from "@/components/Like";
 
 export default function Home() {
   return (
     <div className="flex h-screen items-center justify-center">
-      <Count />
+      <Like />
     </div>
   );
 }

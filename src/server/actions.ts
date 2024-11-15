@@ -2,7 +2,7 @@
 
 import prisma from "@/db/prisma";
 
-export async function getLikeCount() {
+export async function getLike() {
   try {
     const user =
       (await prisma.user.findFirst()) ||
@@ -24,6 +24,6 @@ export async function incrementLike() {
     });
     return user.like;
   } catch {
-    return getLikeCount();
+    return getLike();
   }
 }

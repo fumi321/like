@@ -7,7 +7,7 @@ export default function Like() {
   const [like, setLike] = useState(0);
 
   useEffect(() => {
-    getLike().then(setLike);
+    getLike().then(setLike).catch(console.error);
   }, []);
 
   return (
@@ -16,7 +16,7 @@ export default function Like() {
       <button
         className="rounded bg-blue-500 px-4 py-2 text-3xl font-bold text-white hover:bg-blue-600 disabled:bg-gray-400"
         onClick={() => {
-          incrementLike().then(setLike);
+          incrementLike().then(setLike).catch(console.error);
         }}
       >
         Click me!
